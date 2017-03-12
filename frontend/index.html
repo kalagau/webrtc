@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8"/>
+        <link href="style/style.css" rel="stylesheet" type="text/css"/>
+        <title>Take My Stuff Video Chat</title>
+    </head>
+    <body>
+        <div id = "loginPage"> 
+            <h2>Take My Stuff Video Chat Sign In</h2> 
+            <label for = "loginInput">Login</label> 
+            <input type = "email" id = "loginInput" placeholder = "Login"> 
+            <button id = "signIn">Sign in</button>
+        </div>
+        <div id = "videoChat" class = "chat"> 
+            <video id = "local" autoplay></video> 
+            <video id = "remote" autoplay></video>
+		
+            <div class = "nav"> 
+                <input id = "otherUser" type = "text" placeholder = "Enter the USer you want to contact here" /> 
+                <button id = "connect">Connect</button> 
+                <button id = "disconnect">Disconect</button> 
+            </div>	
+        </div> 
+        <script src = "js/client.js"></script> 
+    </body>
+</html>		  

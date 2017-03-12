@@ -1,0 +1,32 @@
+
+	
+body { 
+    background: #eee; 
+    padding: 5% 0; 
+} 
+
+video { 
+    background: black; 
+    border: 1px solid gray; 
+}
+
+.chat { 
+    position: relative; 
+    display: block; 
+    margin: 0 auto; 
+    width: 600px; 
+    height: 600px; 
+} 
+
+#local{ 
+    width: 200px; 
+    height: 200px; 
+    position: absolute; 
+    top: 15px; 
+    right: 15px; 
+}
+
+#remote { 
+    width: 600px; 
+    height: 600px; 
+}
