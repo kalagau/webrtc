@@ -5,7 +5,7 @@ var clientConnection;
 var stream;
   
 //connecting to our signaling server
-var server = new WebSocket('ws://localhost:9090');
+var server = new WebSocket('wss://pure-scrubland-76206.herokuapp.com/');
   
 server.onopen = function () { 
    console.log("Connected"); 
