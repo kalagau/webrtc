@@ -1,7 +1,16 @@
 //WEB RTC SIGNALLING SERVER 
 // using sockets
+const express = require('express');
+    const path = require('path');
+
+const PORT = process.env.PORT || 3000;
+const INDEX = path.join(__dirname, 'index.html');
+
+const server = express()
+  .use((req, res) => res.sendFile(INDEX) )
+  .listen(PORT, () => console.log(`Listening on ${ PORT }`));
 var WebSocketServer = require('ws').Server; 
-var wss = new WebSocketServer({port: 9090}); 
+var wss = new WebSocketServer({ server }); 
 
 //List of active users and their connection statuses
 var users = {};
